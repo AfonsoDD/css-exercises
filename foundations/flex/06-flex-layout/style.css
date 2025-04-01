@@ -24,3 +24,58 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+ 
+/* Solution */
+
+body {
+  display: flex;
+  flex-direction: column; /* Isto é para deixar organizado por colunas*/
+}
+
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px
+}
+
+.footer {
+  background-color: #eeeeeed5;
+}
+
+.left-links, .right-links {
+  display: flex;
+  list-style-type: none;
+  gap: 16px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+li {
+  margin: 0px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1; /* Isto é para o contéudo assumir todo o espaço disponível */
+}
+
+img {
+  margin-bottom: 16px;
+}
+
+input {
+  margin-bottom: 16px;
+}
+
+button {
+  padding: 8px 16px;
+}
